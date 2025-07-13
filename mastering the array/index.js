@@ -121,6 +121,8 @@ let arr = [12, -7, -3, 4, -1, 9, -2];
 
 console.log(negativeAndPositiveNumberSegregate(arr))
 
+//next question
+
 
 
 
