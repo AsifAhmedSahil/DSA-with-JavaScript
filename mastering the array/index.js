@@ -155,13 +155,35 @@
 // console.log(temp)
 
 // left rotation and right rotation by k element - best approach(no extra space + no n square)
+// left
 
+// let arr =[1,2,3,4,5]
+// let k = 3
+
+// reverse(0,k-1)
+// reverse(k,arr.length-1)
+// reverse(0,arr.length-1)
+
+// function reverse(i,j){
+//     while(i<j){
+//         let temp = arr[i]
+//         arr[i] = arr[j]
+//         arr[j] = temp
+
+//         i++
+//         j--
+//     }
+// }
+
+// console.log(arr)
+
+// right
 let arr =[1,2,3,4,5]
-let k = 3
+let k = 2
 
-reverse(0,k-1)
-reverse(k,arr.length-1)
 reverse(0,arr.length-1)
+reverse(k,arr.length-1)
+reverse(0,k-1)
 
 function reverse(i,j){
     while(i<j){
