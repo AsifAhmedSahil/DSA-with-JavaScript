@@ -93,35 +93,89 @@
 
 // replace neg and positive number
 
-function negativeAndPositiveNumberSegregate(arr){
-    let left = 0;
-    let right = arr.length - 1;
+// function negativeAndPositiveNumberSegregate(arr){
+//     let left = 0;
+//     let right = arr.length - 1;
 
-    while(left < right){
+//     while(left < right){
 
-        while(arr[left] < 0 && left < right){
-            left++
-        }
+//         while(arr[left] < 0 && left < right){
+//             left++
+//         }
 
-        while(arr[right] >=0 && left < right){
-            right--
-        }
+//         while(arr[right] >=0 && left < right){
+//             right--
+//         }
 
-        if(left < right){
-            let temp = arr[left]
-            arr[left] = arr[right]
-            arr[right] = temp
-        }
-    }
+//         if(left < right){
+//             let temp = arr[left]
+//             arr[left] = arr[right]
+//             arr[right] = temp
+//         }
+//     }
 
-    return arr;
-}
+//     return arr;
+// }
 
-let arr = [12, -7, -3, 4, -1, 9, -2];
+// let arr = [12, -7, -3, 4, -1, 9, -2];
 
-console.log(negativeAndPositiveNumberSegregate(arr))
+// console.log(negativeAndPositiveNumberSegregate(arr))
 
 //next question
+// left rotation and right rotation by k element - bruthforce
+
+// let arr = [1,2,3,4,5]
+// let k = 7
+// k = k % arr.length
+
+// for(let j=0; j<k; j++){
+
+//     let copy = arr[0]
+    
+//     for (let i = 0; i<arr.length -1; i++){
+//         arr[i] = arr[i+1]
+//     }
+//     arr[arr.length-1] = copy
+// }
+
+// console.log(arr)
+
+
+// left rotation and right rotation by k element - mathmatical algorithm not best approach - this is with extra space***
+
+// let arr = [1,2,3,4,5]
+// let temp = new Array(arr.length)
+// let k = 2
+// k = k % arr.length
+
+// for (let i = 0; i<arr.length; i++){
+//     temp[i] = arr[(i+k)%arr.length]
+// }
+
+// console.log(temp)
+
+// left rotation and right rotation by k element - best approach(no extra space + no n square)
+
+let arr =[1,2,3,4,5]
+let k = 3
+
+reverse(0,k-1)
+reverse(k,arr.length-1)
+reverse(0,arr.length-1)
+
+function reverse(i,j){
+    while(i<j){
+        let temp = arr[i]
+        arr[i] = arr[j]
+        arr[j] = temp
+
+        i++
+        j--
+    }
+}
+
+console.log(arr)
+
 
 
 
