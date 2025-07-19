@@ -178,25 +178,53 @@
 // console.log(arr)
 
 // right
-let arr =[1,2,3,4,5]
-let k = 2
+// let arr =[1,2,3,4,5]
+// let k = 2
 
-reverse(0,arr.length-1)
-reverse(k,arr.length-1)
-reverse(0,k-1)
+// reverse(0,arr.length-1)
+// reverse(k,arr.length-1)
+// reverse(0,k-1)
 
-function reverse(i,j){
-    while(i<j){
-        let temp = arr[i]
-        arr[i] = arr[j]
-        arr[j] = temp
+// function reverse(i,j){
+//     while(i<j){
+//         let temp = arr[i]
+//         arr[i] = arr[j]
+//         arr[j] = temp
 
-        i++
-        j--
+//         i++
+//         j--
+//     }
+// }
+
+// console.log(arr)
+
+// merge 2 sorted array
+
+let arr1 = [1,3,6]
+let arr2 = [2,4,5]
+
+let merge = new Array(arr1.length + arr2.length)
+
+let i=j=k=0
+
+while(i<arr1.length && j<arr2.length){
+    if(arr1[i] < arr2[j]){
+        merge[k++] = arr1[i++]
+    } else{
+        merge[k++] = arr2[j++]
     }
+
 }
 
-console.log(arr)
+while(j<arr2.length){
+    merge[k++] = arr2[j++]
+}
+while(i<arr1.length){
+    merge[k++] = arr1[i++]
+
+}
+
+console.log(merge)
 
 
 
