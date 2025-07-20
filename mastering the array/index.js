@@ -200,31 +200,31 @@
 
 // merge 2 sorted array
 
-let arr1 = [1,3,6]
-let arr2 = [2,4,5]
+// let arr1 = [1,3,6]
+// let arr2 = [2,4,5]
 
-let merge = new Array(arr1.length + arr2.length)
+// let merge = new Array(arr1.length + arr2.length)
 
-let i=j=k=0
+// let i=j=k=0
 
-while(i<arr1.length && j<arr2.length){
-    if(arr1[i] < arr2[j]){
-        merge[k++] = arr1[i++]
-    } else{
-        merge[k++] = arr2[j++]
-    }
+// while(i<arr1.length && j<arr2.length){
+//     if(arr1[i] < arr2[j]){
+//         merge[k++] = arr1[i++]
+//     } else{
+//         merge[k++] = arr2[j++]
+//     }
 
-}
+// }
 
-while(j<arr2.length){
-    merge[k++] = arr2[j++]
-}
-while(i<arr1.length){
-    merge[k++] = arr1[i++]
+// while(j<arr2.length){
+//     merge[k++] = arr2[j++]
+// }
+// while(i<arr1.length){
+//     merge[k++] = arr1[i++]
 
-}
+// }
 
-console.log(merge)
+// console.log(merge)
 
 
 
