@@ -226,7 +226,40 @@
 
 // console.log(merge)
 
+// max sum subarray = kadans algorithm - letcode medium
 
+// let nums = [-2,-1,-3,4,-1,2,1,-5,4]
+
+// let max = -Infinity
+// let sum = 0
+
+// for (let i = 0; i<nums.length;i++){
+//     sum += nums[i]
+//     max = Math.max(sum,max)
+//     if(sum<0) sum = 0
+// }
+
+// console.log(max)
+
+// leetcode 169 - majority element - moores voting algorithm
+
+// let nums = [2,2,1,1,1,2,2]
+
+// let ans = nums[0]
+
+// count = 1
+
+// for(let i=0; i<nums.length;i++){
+//     if(count = 0){
+//         ans = nums[i]
+//         count = 1
+//     } else if(ans === nums[i]) count++;
+//     else count --
+// }
+
+// console.log(ans)
+
+// leetcode 42 - trapping rain water - hard
 
 
 
