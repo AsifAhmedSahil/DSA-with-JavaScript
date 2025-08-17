@@ -1,6 +1,6 @@
 // check palindrome
 
-let s = prompt("Enter a string")
+let s = "madam"
 let isPalindrome = true 
 let i=0, j=s.length-1
 while(i<j){
