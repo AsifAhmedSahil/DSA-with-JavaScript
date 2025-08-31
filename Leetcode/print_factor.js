@@ -20,3 +20,5 @@ function printFactor(n) {
 }
 
 console.log(printFactor(36))
+
+// update
